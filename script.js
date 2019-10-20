@@ -3,7 +3,7 @@ function daysInYear(year) {
         if (year !== Number || !Number.isInteger(year)) {
             throw new Error();
         } 
-        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) ? console.log(366) : console.log(365);
+        return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0) ? 366 : 365;
     } catch (e) {
         return 'exception, it is not a year!'
     }
